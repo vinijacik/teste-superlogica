@@ -37,13 +37,9 @@
       "skipLibCheck": true,
       "baseUrl": ".",
       "paths": {
-         "@adapters/*": ["src/adapters/*"],
-         "@common/*": ["src/common/*"],
-         "@containers/*": ["src/containers/*"],
-         "@dtos/*": ["src/dtos/*"],
-         "@infra/*": ["src/infra/*"],
+         "@config/*": ["src/config/*"],
          "@modules/*": ["src/modules/*"],
-         "@tests/*": ["src/tests/*"]
+         "@shared/*": ["src/shared/*"]
       },
       "typeRoots": [
          "./src/@types",

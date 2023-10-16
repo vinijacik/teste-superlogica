@@ -34,7 +34,7 @@ module.exports = {
 			'warn',
 			{
 				selector: 'variable',
-				format: ['camelCase', 'snake_case'],
+				format: ['camelCase'],
 			},
 		],
 	},
@@ -42,6 +42,7 @@ module.exports = {
 		'import/resolver': {
 			node: {
 				typescript: {},
+				extensions: ['.js', '.jsx', '.ts', '.tsx'],
 			},
 		},
 	},
