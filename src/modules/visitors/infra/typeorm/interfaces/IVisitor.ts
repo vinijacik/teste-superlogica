@@ -1,10 +1,10 @@
+import Visit from '@modules/visits/infra/typeorm/entities/visit';
+
 interface IVisitor {
-	id: number;
+	id?: number;
 	fullName: string;
-	entryDate: string;
-	entryTime: string;
-	unit: string;
-	condominiun: string;
+	document: string;
+	visits: Visit[];
 }
 
 export default IVisitor;
