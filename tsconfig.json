@@ -1,0 +1,55 @@
+{
+   "ts-node": {
+      "transpileOnly": true,
+      "require": [
+         "tsconfig-paths/register"
+      ]
+   },
+   "compilerOptions": {
+      "lib": [
+         "ES2023",
+         "es6"
+      ],
+      "target": "es2022",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "outDir": "./dist",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "sourceMap": true,
+      "removeComments": false,
+      "noImplicitAny": true,
+      "strictNullChecks": true,
+      "strictFunctionTypes": true,
+      "noImplicitThis": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noImplicitReturns": true,
+      "noFallthroughCasesInSwitch": true,
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "rootDir": ".",
+      "allowJs": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "strictPropertyInitialization": false,
+      "skipLibCheck": true,
+      "baseUrl": ".",
+      "paths": {
+         "@adapters/*": ["src/adapters/*"],
+         "@common/*": ["src/common/*"],
+         "@containers/*": ["src/containers/*"],
+         "@dtos/*": ["src/dtos/*"],
+         "@infra/*": ["src/infra/*"],
+         "@modules/*": ["src/modules/*"],
+         "@tests/*": ["src/tests/*"]
+      },
+      "typeRoots": [
+         "./src/@types",
+         "./global.d.ts",
+         "./node_modules/@types",
+         "./src/types"
+      ]
+   }
+}

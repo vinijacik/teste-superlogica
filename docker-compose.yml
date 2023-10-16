@@ -1,0 +1,24 @@
+version: "3.3"
+
+services:
+  postgresql:
+    image: postgres:alpine3.18
+    restart: always
+    tty: true
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=postgres
+    ports:
+      - 0.0.0.0:5432:5432
+    networks:
+      - local_network
+networks:
+  local_network:
+    driver: bridge
+
+volumes:
+  mysql:
+    driver: local
+    

@@ -1,0 +1,3 @@
+# Ignore artifacts:
+.serverless
+node_modules
